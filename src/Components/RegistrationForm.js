@@ -1,28 +1,38 @@
-import React, { useState } from 'react';
-import './RegistrationForm.css';
-import { Link } from 'react-router-dom';
+import React from 'react';
+  
+  // var RegistrationForm = () =>  {
+	// return (
+	//   <div>
+	//   </div>
+	// );
+  // }
+  
+  // export default RegistrationForm;
+  import React, { useState } from 'react';
+  import './RegistrationForm.css';
+  import { Link } from 'react-router-dom';
 
 
-const RegistrationForm = () => {
-  const [formValues, setFormValues] = useState({
+var RegistrationForm = () => {
+  var [formValues, setFormValues] = useState({
     fullname: '',
     email: '',
     password: '',
     confirmPassword: ''
   });
 
-  const [formErrors, setFormErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  var [formErrors, setFormErrors] = useState({});
+  var [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  var handleChange = (e) => {
+    var { name, value } = e.target;
     setFormValues({
       ...formValues,
       [name]: value
     });
   };
 
-  const validate = (values) => {
+  var validate = (values) => {
     let errors = {};
 
     if (!values.fullname) {
@@ -50,7 +60,7 @@ const RegistrationForm = () => {
     return errors;
   };
 
-  const handleSubmit = (e) => {
+  var handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmitting(true);

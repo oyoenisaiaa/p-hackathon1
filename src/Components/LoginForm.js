@@ -1,4 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
+  
+  const LoginForm = () =>  {
+	return (
+	  <div>
+	  </div>
+	);
+  }
+  
+  export default LoginForm;
+  import React, { useState } from 'react';
 import './LoginForm.css';
 import { Link } from 'react-router-dom';
 

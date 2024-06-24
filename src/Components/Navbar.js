@@ -1,4 +1,14 @@
-import React from 'react'
+import React from 'react';
+  
+  // const Navbar = () =>  {
+	// return (
+	//   <div>
+	//   </div>
+	// );
+  // }
+  
+  // export default Navbar;
+  import React from 'react'
 import { HiOutlineUserPlus } from "react-icons/hi2";
 import './Navbar.css'
 import { Link } from 'react-router-dom';

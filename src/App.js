@@ -1,4 +1,14 @@
-
+import React from 'react';
+  
+  // const App = () =>  {
+	// return (
+	//   <div>
+	//   </div>
+	// );
+  // }
+  
+  // export default App;
+  
 import './App.css';
 import'./Components/Navbar'
 import Navbar from './Components/Navbar';
